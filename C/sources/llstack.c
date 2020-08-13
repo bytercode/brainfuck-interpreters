@@ -17,7 +17,7 @@ struct LiNode *LScreateNode(long val, struct LiNode *prev)
 
 void LSdestroy(struct LiStack *ls)
 {
-    while (ls->size > 0) LSpop(ls);
+    while (ls->size > 0) LSpop(ls); // I know it's slow but I'm too lazy to change it...
 }
 
 long LStop(struct LiStack *ls)
