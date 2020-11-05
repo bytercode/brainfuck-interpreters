@@ -50,7 +50,7 @@ function main(argc, argv)
 	while (i <= ssize) do
 		local cindex = string.sub(bfcode, i, i);
 		if (cindex == '.') then
-			print(utf8.char(cells[ceindex]));
+			print(string.char(cells[ceindex]));
 		elseif (cindex == '+') then
 			cells[ceindex] = cells[ceindex] + 1;
 			if (cells[ceindex] > 255) then cells[ceindex] = 0; end
